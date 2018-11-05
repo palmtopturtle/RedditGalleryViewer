@@ -178,7 +178,7 @@ class Search extends Component {
     return (
       <div className="app">
         <h1 className="header">
-          Reddit Gallery View - {this.state.subreddit ? this.state.subreddit : "Frontpage"} 
+          Reddit Gallery Viewer - {this.state.subreddit ? this.state.subreddit : "Frontpage"} 
         </h1>
         <SearchForm
           searchTextSubreddit={this.state.searchTextSubreddit}
