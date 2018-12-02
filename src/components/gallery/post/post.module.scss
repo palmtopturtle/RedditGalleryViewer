@@ -1,0 +1,84 @@
+@import "../../../global";
+
+.post {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.post-image {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.selftext {
+  padding: 1rem;
+  font-family: $font-family-opensans;
+  line-height: 1.4em;
+  background-image: url(../../../images/SelftextIcon.png);
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: repeat-y;
+  height: 100%;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.post-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  font-family: $font-family-roboto;
+  border-top: solid 1px rgba(0, 0, 0, 0.3);
+
+  //padding needs to be on a relatively positioned item
+  .padding {
+    position: relative;
+    padding: 0.5rem;
+  }
+}
+
+.title {
+  text-decoration: none;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: $font-size-regular;
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline #000;
+    }
+  }
+}
+
+//subreddit, author, date, score, and # of comments
+.post-meta {
+  font-size: $font-size-small;
+  font-weight: $font-size-regular;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      text-decoration: underline #000;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../global";
+
+//Mixins
+@mixin tag($text-color, $bg-color) {
+  display: inline-block;
+  font-family: $font-family-roboto;
+  font-size: $font-size-regular;
+  font-weight: $font-size-medium;
+  text-align: center;
+  color: $text-color;
+  background-color: $bg-color;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5rem;
+
+  i {
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+//Classes
+.tags-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  flex-wrap: wrap;
+
+  .tag {
+    @include tag(#fff, $reddit-orange);
+  }
+}

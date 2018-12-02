@@ -1,0 +1,14 @@
+@import "../../global";
+
+.gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 20px;
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+  }

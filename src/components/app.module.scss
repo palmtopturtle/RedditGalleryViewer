@@ -1,0 +1,21 @@
+@import "../global";
+
+h1 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-roboto;
+  text-align: center;
+}
+
+//Resets
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
