@@ -1,0 +1,39 @@
+//Colors
+$reddit-orange: hsl(20, 100%, 50%);
+$warning: hsl(0, 63%, 75%);
+$warning-highlight: hsl(0, 56%, 62%);
+
+//Fonts
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-opensans: "Open Sans", sans-serif;
+$font-size-small: 0.75rem;
+$font-size-regular: 1rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 2rem;
+$font-size-header: 4rem;
+$font-weight-regular: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+//Responsive
+$screen-phone: 500px;
+
+@mixin phone {
+  @media (max-width: $screen-phone) {
+    @content;
+  }
+}
+
+//Other mixins
+@mixin button($text-color, $bg-color) {
+  display: inline-block;
+  color: $text-color;
+  background: $bg-color;
+  padding: 0.5em;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-roboto;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
