@@ -7,6 +7,7 @@
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  animation: fade 1s forwards;
 
   .body {
     width: 100%;
@@ -25,7 +26,6 @@
 .selftext {
   padding: 1rem;
   font-family: $font-family-opensans;
-  line-height: 1.4em;
   background-image: url(../../../images/SelftextIcon.png);
   background-size: contain;
   background-position-x: center;
@@ -33,6 +33,7 @@
   height: 100%;
 
   p {
+    line-height: 1.4em;
     margin-top: 0;
   }
 }
@@ -81,4 +82,9 @@
       text-decoration: underline #000;
     }
   }
+}
+
+@keyframes fade {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
