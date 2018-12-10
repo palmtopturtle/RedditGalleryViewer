@@ -1,0 +1,20 @@
+@import "../../../global";
+
+.square {
+    display: inline-block;
+    background-color: $reddit-orange;
+    height: 50px;
+    width: 50px;
+    border: 4px solid #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    span {
+        color: #fff;
+        font-family: $font-family-roboto;
+        font-weight: $font-weight-bold;
+        font-size: 24px;
+    }
+}
