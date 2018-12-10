@@ -27,12 +27,26 @@
   flex-wrap: wrap;
 }
 
+.subreddit {
+  text-align: center;
+  font-family: $font-family-roboto;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-medium;
+  color: #000;
+  margin-bottom: 0.5em;
+  
+  span {
+    font-weight: $font-weight-regular;
+  }
+}
+
 .select-container {
   width: 100%;
   text-align: center;
   font-family: $font-family-roboto;
   font-size: $font-size-regular;
   font-weight: $font-weight-medium;
+  color: #000;
 
   .select {
     margin-right: 0.5rem;

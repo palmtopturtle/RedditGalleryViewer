@@ -57,7 +57,7 @@ class SearchForm extends Component {
   };
 
   render() {
-    const { addTag, setSubreddit, warning } = this.props;
+    const { addTag, setSubreddit, subreddit, warning } = this.props;
     return (
       <form className={styles["search-form"]}>
         <div className={styles["input-container"]}>
@@ -65,6 +65,7 @@ class SearchForm extends Component {
           <SearchInput submitData={addTag}>Add Tag</SearchInput>
         </div>
         {warning ? <div className={styles.warning}>{warning}</div> : null}
+        <div className={styles.subreddit}>Currently browsing: <span>{subreddit ? subreddit : "Frontpage"}</span></div>
         {this.renderSelects()}
       </form>
     );
