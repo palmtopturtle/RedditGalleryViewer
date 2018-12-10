@@ -1,7 +1,7 @@
 # Reddit Gallery Viewer
 Displays posts from Reddit using CSS Grid in a masonry pattern.
 
-##Todo
+## Todo
 * ~~Implement SCSS and CSS modules~~
 * ~~Reorganize component structure~~
 * Add more styles and assets (logo, animated loading indicator, etc.)
