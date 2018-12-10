@@ -4,6 +4,7 @@ import SearchForm from "./searchform/SearchForm";
 import Gallery from "./gallery/Gallery";
 import TagsDisplay from "./tagsdisplay/TagsDisplay";
 import Footer from "./footer/Footer";
+import Logo from "./logo/Logo";
 import "./app.module.scss";
 
 const BASE_URL = "https://www.reddit.com/";
@@ -143,15 +144,13 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <h1>
-          Reddit Gallery Viewer -{" "}
-          {this.state.subreddit ? this.state.subreddit : "Frontpage"}
-        </h1>
+        <Logo />
         <SearchForm
           updateSelect={this.updateSelect}
           tagsLength={this.state.tags.length}
           addTag={this.addTag}
           setSubreddit={this.setSubreddit}
+          subreddit={this.state.subreddit}
           warning={this.state.warning}
         />
         <TagsDisplay tags={this.state.tags} deleteTag={this.deleteTag} />
