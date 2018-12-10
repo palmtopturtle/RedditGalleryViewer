@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./footer.module.scss";
+import Loader from "./loader/Loader"
 
 class Footer extends Component {
   /**
@@ -20,7 +21,7 @@ class Footer extends Component {
 
   /**
    * Displays different information depending on the props.
-   * * isLoading ? shows "Loading..."
+   * * isLoading ? shows "Loading..." animation
    * * reachedEnd ? informs the user that there are no more posts to load
    * * error ? runs through error handling
    * * else, displays "Load More" button
@@ -28,7 +29,7 @@ class Footer extends Component {
   renderFooter = () => {
     const { isLoading, error, reachedEnd, fetchPosts } = this.props;
     if (isLoading) {
-      return <h2>Loading...</h2>;
+      return <Loader />;
     } else if (reachedEnd) {
       return <h2>Reached end!</h2>;
     } else if (error) {
