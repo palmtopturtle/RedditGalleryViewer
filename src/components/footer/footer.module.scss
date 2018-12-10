@@ -1,19 +1,19 @@
 @import "../../global";
 
 .footer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
 
   h2 {
     font-size: $font-size-large;
     font-weight: $font-weight-medium;
     font-family: $font-family-roboto;
-    text-align: center;
   }
 }
 
 .btn {
   @include button(#fff, $reddit-orange);
   display: block;
-  margin: 0 auto;
 }
