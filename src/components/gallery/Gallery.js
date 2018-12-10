@@ -3,16 +3,16 @@ import Post from "./post/Post";
 import styles from "./gallery.module.scss";
 
 class Gallery extends Component {
-  renderPosts = () => {
+  render() {
     const { posts } = this.props;
 
-    return posts.map(post =>
-      !post.stickied ? <Post key={posts.indexOf(post)} post={post} /> : null
+    return (
+      <div className={styles.gallery}>
+        {posts.map(post => (
+          <Post key={posts.indexOf(post)} post={post} />
+        ))}
+      </div>
     );
-  };
-
-  render() {
-    return <div className={styles.gallery}>{this.renderPosts()}</div>;
   }
 }
 
